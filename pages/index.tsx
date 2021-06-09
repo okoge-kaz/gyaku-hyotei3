@@ -9,9 +9,7 @@ import { Segment } from '../interfaces/segment'
 import Layout from '../components/Layout'
 
 const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
-    <h1> Hello Next.js ++++--</h1>
-  </Layout>
+  <div>Hellor world++</div>
 )
 
 export default IndexPage
