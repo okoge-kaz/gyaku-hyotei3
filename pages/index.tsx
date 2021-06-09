@@ -11,7 +11,15 @@ interface StaticIndexProps {
 }
 const index = (props: StaticIndexProps) => {
   return (
-    <div>Hellor world++++--</div>
+    <div>
+      <SubHead />
+      <Container className="mt-4">
+        <Head>
+          <title>Titech Info</title>
+        </Head>
+        <Content {...props}/>
+      </Container>
+    </div>
   )
 }
 
@@ -28,4 +36,4 @@ export const getStaticProps: GetStaticProps = async () => {
       segments,
     },
   }
-};
+}
