@@ -9,9 +9,11 @@ import { Segment } from '../interfaces/segment'
 interface StaticIndexProps {
   segments: Segment[]
 }
-const index = (props: StaticIndexProps) => (
-  <div>Hellor world++++</div>
-)
+const index = (props: StaticIndexProps) => {
+  return (
+    <div>Hellor world++++--</div>
+  )
+}
 
 export default index
 
