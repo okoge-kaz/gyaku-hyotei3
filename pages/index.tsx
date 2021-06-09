@@ -9,11 +9,11 @@ import { Segment } from '../interfaces/segment'
 interface StaticIndexProps {
   segments: Segment[]
 }
-const IndexPage = () => (
-  <div>Hellor world++++??++</div>
+const index = (props: StaticIndexProps) => (
+  <div>Hellor world++++</div>
 )
 
-export default IndexPage
+export default index
 
 export const getStaticProps: GetStaticProps = async () => {
   const res = await fetch(
