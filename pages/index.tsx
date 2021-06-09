@@ -6,10 +6,11 @@ import SubHead from './components/SubHeader'
 import Content from './Content'
 import { Segment } from '../interfaces/segment'
 
-import Layout from '../components/Layout'
-
+interface StaticIndexProps {
+  segments: Segment[]
+}
 const IndexPage = () => (
-  <div>Hellor world++</div>
+  <div>Hellor world++++??</div>
 )
 
 export default IndexPage
