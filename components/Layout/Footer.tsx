@@ -1,15 +1,11 @@
 import React, { FC } from 'react'
+import { Container } from 'react-bootstrap'
+import styles from './Footer.module.css'
 
 const Footer: FC = () => (
-  <div className="bg-light py-3 mt-5">
-    <div className="text-center">
-      <small>
-        CONTACT US
-      </small>
-    </div>
-    <div className="text-center">
-      <small>Copyright 2021 Titech Info</small>
-    </div>
+  <div className={styles.main}>
+    <div className={styles.text}>CONTACT US</div>
+    <div className={styles.text}>Copyright 2021 Titech Info</div>
   </div>
 )
 
