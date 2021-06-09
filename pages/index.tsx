@@ -10,7 +10,20 @@ interface StaticIndexProps {
   segments: Segment[]
 }
 const IndexPage = () => (
-  <div>Hellor world++++??</div>
+  <div>Hellor world++++??++</div>
 )
 
 export default IndexPage
+
+export const getStaticProps: GetStaticProps = async () => {
+  const res = await fetch(
+    'https://titechinfo-data.s3-ap-northeast-1.amazonaws.com/course-review-tmp/school_departments.json',
+  )
+  const segments: Segment[] = await res.json()
+
+  return {
+    props: {
+      segments,
+    },
+  }
+};
