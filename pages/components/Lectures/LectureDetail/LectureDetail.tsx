@@ -1,8 +1,8 @@
-import styles from './LecturesList.module.scss'
 import React from 'react'
-import SubHeader from './SubHeader'
+import syles from './LectureDetail.module.scss'
 import { Container } from 'react-bootstrap'
-import Content from './LecturesListContent'
+import SubHeader from './SubHeader'
+import Content from './LectureDetailContent'
 
 const index = () => {
   return (
