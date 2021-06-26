@@ -13,7 +13,10 @@ const LecturesListContentCell = () => {
   return (
     <div className={styles.main}>
       <div>
-        <Link href="/components/Lectures/LectureDetail/LectureDetail" passHref>test</Link>
+        <Link href="/components/Lectures/LectureDetail/LectureDetail" passHref>
+          科目名
+        </Link>
+        <div>教員名</div>
       </div>
     </div>
   )
