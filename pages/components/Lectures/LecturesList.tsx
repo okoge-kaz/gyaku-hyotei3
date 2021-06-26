@@ -1,6 +1,6 @@
 import styles from './LecturesList.module.scss'
 import React from 'react'
-import SubHeader from '../SubHeader'
+import SubHeader from './SubHeader'
 
 const index = () => {
   return (
