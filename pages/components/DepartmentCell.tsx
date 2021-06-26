@@ -1,6 +1,8 @@
 // import { Department } from '../../interfaces/segment'
 import styles from './DepartmentCell.module.scss'
 import React from 'react'
+import Link from 'next/link'
+
 type DepartmentCellProps = {
   key: number
   id: number
@@ -10,7 +12,11 @@ type DepartmentCellProps = {
 const DepartmentCell = (props: DepartmentCellProps) => {
   return (
     <div className={styles.main}>
-      <div key={props.id}>{props.name}</div>
+      <div key={props.id}>
+        <Link href="components/Lectures/LecturesList" passHref>
+          <a>{props.name}</a>
+        </Link>
+      </div>
     </div>
   )
 }
