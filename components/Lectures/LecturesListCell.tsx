@@ -13,7 +13,7 @@ const LecturesListContentCell = () => {
   return (
     <div className={styles.main}>
       <div>
-        <Link href="/components/Lectures/LectureDetail/LectureDetail" passHref>
+        <Link href="" passHref>
           <a className={styles.link}>test</a>
         </Link>
       </div>

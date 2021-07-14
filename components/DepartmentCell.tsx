@@ -13,7 +13,7 @@ const DepartmentCell = (props: DepartmentCellProps) => {
   return (
     <div className={styles.main}>
       <div key={props.id}>
-        <Link href={`${props.id}`} passHref>
+        <Link href={`${props.id}`}>
           <a className={styles.link}>{props.name}</a>
         </Link>
       </div>
