@@ -1,6 +1,5 @@
 import { Segment } from '../interfaces/segment'
-import styles from './Content.module.scss'
-import ContentsCell from './components/ContentsCell'
+import ContentsCell from './ContentsCell'
 import React from 'react'
 
 interface StaticIndexProps {
@@ -9,7 +8,7 @@ interface StaticIndexProps {
 
 const SegmentIndex = (props: StaticIndexProps) => {
   return (
-    <div className={styles.main}>
+    <div>
       {(props.segments || []).map(segment => (
         <ContentsCell
           key={segment.school}

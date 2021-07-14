@@ -1,4 +1,4 @@
-import { Department } from '../../interfaces/segment'
+import { Department } from '../interfaces/segment'
 import styles from './ContentsCell.module.scss'
 import React from 'react'
 import DepartmentCell from './DepartmentCell'

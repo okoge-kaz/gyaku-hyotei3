@@ -2,8 +2,8 @@ import React from 'react'
 import { GetStaticProps } from 'next'
 import Head from 'next/head'
 import { Container } from 'react-bootstrap'
-import SubHead from './components/SubHeader'
-import Content from './Content'
+import SubHead from '../components/SubHeader'
+import Content from '../components/Content'
 import { Segment } from '../interfaces/segment'
 
 interface StaticIndexProps {
