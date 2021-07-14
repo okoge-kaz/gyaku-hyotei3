@@ -14,7 +14,7 @@ const DepartmentCell = (props: DepartmentCellProps) => {
     <div className={styles.main}>
       <div key={props.id}>
         <Link href="components/Lectures/LecturesList" passHref>
-          <a>{props.name}</a>
+          <a className={styles.link}>{props.name}</a>
         </Link>
       </div>
     </div>
