@@ -1,8 +1,7 @@
 import React from 'react'
-import syles from './LectureDetail.module.scss'
 import { Container } from 'react-bootstrap'
-import SubHeader from './SubHeader'
-import Content from './LectureDetailContent'
+import SubHeader from '../../components/Lectures/LectureDetail/SubHeader'
+import Content from '../../components/Lectures/LectureDetail/LectureDetailContent'
 
 const index = () => {
   return (
