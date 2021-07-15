@@ -14,16 +14,18 @@ interface StaticIndexProps {
 const LecturesListContentCell = (props: StaticIndexProps) => {
   return (
     <div className={styles.main}>
-      <div>
-        <Link href="" passHref>
-          <a className={styles.link}>{props.name}</a>
-        </Link>
-        <div className={styles.teachers}>
-        {props.teachers.map(teacher => (
-          <div className={styles.teacher}>{teacher}</div>
-        ))}
-        </div>
-      </div>
+      <Link href="" passHref>
+        <a className={styles.link}>
+          <div>
+            {props.name}
+            <div className={styles.teachers}>
+              {props.teachers.map(teacher => (
+                <div className={styles.teacher}>{teacher}</div>
+              ))}
+            </div>
+          </div>
+        </a>
+      </Link>
     </div>
   )
 }

@@ -12,11 +12,11 @@ type DepartmentCellProps = {
 const DepartmentCell = (props: DepartmentCellProps) => {
   return (
     <div className={styles.main}>
-      <div key={props.id}>
-        <Link href={`${props.id}`}>
-          <a className={styles.link}>{props.name}</a>
-        </Link>
-      </div>
+      <Link href={`${props.id}`}>
+        <a className={styles.link}>
+          <div key={props.id}>{props.name}</div>
+        </a>
+      </Link>
     </div>
   )
 }
