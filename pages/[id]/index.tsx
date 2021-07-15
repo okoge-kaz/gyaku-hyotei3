@@ -54,7 +54,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
     fallback: false,
   }
 }
-// 以下の記述ないようについてよう検証
+
 export const getStaticProps: GetStaticProps = async (
   context: GetStaticPropsContext<{ id: string }>,
 ) => {
