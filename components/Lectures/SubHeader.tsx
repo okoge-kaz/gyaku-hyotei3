@@ -2,10 +2,15 @@ import React, { FC } from 'react'
 import styles from './SubHeader.module.scss'
 import { Jumbotron, Container } from 'react-bootstrap'
 
-const SubHeader = () => (
+interface StaticIndexProps {
+  key: number
+  name: string
+}
+
+const SubHeader = (props: StaticIndexProps) => (
   <Container className={styles.ContainerPadding}>
     <Jumbotron className={styles.JumbotronSize}>
-      <h1>Test 系</h1>
+      <h1>{props.key} 系</h1>
     </Jumbotron>
   </Container>
 )
