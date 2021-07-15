@@ -9,14 +9,12 @@ import Head from 'next/head'
 
 interface StaticIndexProps {
   courseslists: DepartmentCoursesListWithLevel[]
-  departmentid: number
+  department: Department
 }
 
 // interface StaticIndexProps {
 //   segments: Segment[]
 // }
-let departmentnames: string[] = new Array()
-departmentnames.push('')
 
 const DepartmentCoursesList = (props: StaticIndexProps) => {
   // if (typeof props.courseslist === 'undefined') {
@@ -29,7 +27,7 @@ const DepartmentCoursesList = (props: StaticIndexProps) => {
       <Head>
         <title>{title}</title>
       </Head>
-      <SubHeader key={props.departmentid} name={departmentnames[props.departmentid]}/>
+      <SubHeader key={props.department.id} name={props.department.name}/>
       <Container className="mt-4">
         {(props.courseslists || []).map(courselist => (
           <Content key={courselist.level} level={courselist.level} courses={courselist.courses} />
@@ -50,9 +48,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
   let departmentpaths: Department[] = new Array()
   segments.map(segment => segment.departments.map(department => departmentpaths.push(department)))
-  segments.map(segment =>
-    segment.departments.map(department => departmentnames.push(department.name)),
-  )
 
   return {
     paths: departmentpaths.map(departmentpath => `/${departmentpath.id}`),
@@ -68,11 +63,20 @@ export const getStaticProps: GetStaticProps = async (
     `https://titechinfo-data.s3-ap-northeast-1.amazonaws.com/course-review-tmp/department/${params.id}.json`,
   )
   const courseslists: DepartmentCoursesListWithLevel[] = await res.json()
-  const departmentid: number = Number(params.id)
+
+  const response = await fetch(
+    `https://titechinfo-data.s3-ap-northeast-1.amazonaws.com/course-review-tmp/school_departments.json`,
+  )
+  const segments: Segment[] = await response.json()
+  let departments: Department[] = new Array()
+  segments.map(segment => segment.departments.map(department => departments.push(department)))
+
+  const department = departments.find(department => department.id === parseInt(params.id))
+
   return {
     props: {
       courseslists,
-      departmentid,
+      department,
     },
   }
 }

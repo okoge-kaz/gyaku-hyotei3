@@ -10,7 +10,7 @@ interface StaticIndexProps {
 const SubHeader = (props: StaticIndexProps) => (
   <Container className={styles.ContainerPadding}>
     <Jumbotron className={styles.JumbotronSize}>
-      <h1>{props.key} 系</h1>
+      <h1>{(props.name)}</h1>
     </Jumbotron>
   </Container>
 )
