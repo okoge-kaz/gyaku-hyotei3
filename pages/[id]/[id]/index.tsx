@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
-import SubHeader from '../../components/Lectures/LectureDetail/SubHeader'
-import Content from '../../components/Lectures/LectureDetail/LectureDetailContent'
+import SubHeader from '../../../components/Lectures/LectureDetail/SubHeader'
+import Content from '../../../components/Lectures/LectureDetail/LectureDetailContent'
 
 const index = () => {
   return (
