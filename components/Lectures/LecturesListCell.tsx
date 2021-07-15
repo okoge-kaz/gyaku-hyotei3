@@ -16,8 +16,13 @@ const LecturesListContentCell = (props: StaticIndexProps) => {
     <div className={styles.main}>
       <div>
         <Link href="" passHref>
-          <a className={styles.link}>{(props.name)}</a>
+          <a className={styles.link}>{props.name}</a>
         </Link>
+        <div className={styles.teachers}>
+        {props.teachers.map(teacher => (
+          <div className={styles.teacher}>{teacher}</div>
+        ))}
+        </div>
       </div>
     </div>
   )
