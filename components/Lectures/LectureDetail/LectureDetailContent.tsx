@@ -13,34 +13,44 @@ const LecturesListContent = (props: StaticIndexProps) => {
   return (
     <Container className={styles.ContainerPadding}>
       <div className={styles.main}>
-        <div>基本情報</div>
-      </div>
-      <div>
-        <p>教員 {props.teachers}</p>
-        <p>総合評価</p>
-      </div>
-      <div className={styles.main}>
-        <div>詳細情報</div>
-      </div>
-      <div>
+        <div className={styles.title}>基本情報</div>
+
         <div>
-          良い点
-          <li>テキスト、テキスト</li>
-          <li>テキスト、テキスト</li>
-          <li>テキスト、テキスト</li>
+          <p>
+            <span className={styles.subtitle}>教員</span> {props.teachers}
+          </p>
+          <p>
+            <span className={styles.subtitle}>総合評価</span>
+          </p>
         </div>
+
+        <div className={styles.title}>詳細情報</div>
+
         <div>
-          悪い点
-          <li>テキスト、テキスト</li>
-          <li>テキスト、テキスト</li>
-          <li>テキスト、テキスト</li>
+
+          <div className={styles.content}>
+            <span className={styles.subtitle}>良い点</span>
+            <li>てきすとてきすとてきすとてきすとてきすと</li>
+            <li>てきすとてきすとてきすとてきすとてきすと</li>
+            <li>てきすとてきすとてきすとてきすとてきすと</li>
+          </div>
+
+          <div className={styles.content}>
+            <span className={styles.subtitle}>悪い点</span>
+            <li>てきすとてきすとてきすとてきすとてきすと</li>
+            <li>てきすとてきすとてきすとてきすとてきすと</li>
+            <li>てきすとてきすとてきすとてきすとてきすと</li>
+          </div>
+
+          <div className={styles.content}>
+            <span className={styles.subtitle}>その他</span>
+            <li>てきすとてきすとてきすとてきすとてきすと</li>
+            <li>てきすとてきすとてきすとてきすとてきすと</li>
+            <li>てきすとてきすとてきすとてきすとてきすと</li>
+          </div>
+
         </div>
-        <div>
-          その他
-          <li>テキスト、テキスト</li>
-          <li>テキスト、テキスト</li>
-          <li>テキスト、テキスト</li>
-        </div>
+
       </div>
     </Container>
   )
