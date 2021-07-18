@@ -2,14 +2,21 @@ import React from 'react'
 import styles from './LectureDetailContent.module.scss'
 import { Container } from 'react-bootstrap'
 
-const LecturesListContent = () => {
+interface StaticIndexProps {
+  key: string
+  id: string
+  name: string
+  teachers: string[]
+}
+
+const LecturesListContent = (props: StaticIndexProps) => {
   return (
     <Container className={styles.ContainerPadding}>
       <div className={styles.main}>
         <div>基本情報</div>
       </div>
       <div>
-        <p>教員 教員名1, 教員名2</p>
+        <p>教員 {props.teachers}</p>
         <p>総合評価</p>
       </div>
       <div className={styles.main}>
