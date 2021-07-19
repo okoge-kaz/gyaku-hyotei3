@@ -27,11 +27,11 @@ const LecturesListContent = (props: StaticIndexProps) => {
             </span>
           </p>
           <p>
-            <span className={styles.subtitle}>総合評価</span>
+            <div className={styles.subtitle}>総合評価</div>
             <Image
-            src='/../../../public/image/evaluation.png'
-            width="auto"
-            height="auto"
+            src='/image/evaluation.png'
+            width='329'
+            height='400'
             alt="evaluation"
           />
           </p>
@@ -65,11 +65,11 @@ const LecturesListContent = (props: StaticIndexProps) => {
         <div className={styles.title}>詳細情報</div>
 
         <div className={styles.content}>
-          <span className={styles.subtitle}>わかりやすさ</span>
+          <div className={styles.subtitle}>わかりやすさ</div>
           <Image
-            src='/../../../public/image/evaluation.png'
-            width="auto"
-            height="auto"
+            src='/image/evaluation.png'
+            width='329'
+            height='400'
             alt="evaluation"
           />
         </div>
@@ -96,11 +96,11 @@ const LecturesListContent = (props: StaticIndexProps) => {
         </div>
 
         <div className={styles.content}>
-          <span className={styles.subtitle}>点数</span>
+          <div className={styles.subtitle}>点数</div>
           <Image
-            src='/../../../public/image/evaluation.png'
-            width="auto"
-            height="auto"
+            src='/image/evaluation.png'
+            width='329'
+            height='400'
             alt="evaluation"
           />
         </div>
