@@ -6,29 +6,37 @@ import { DepartmentCoursesListWithLevel, Course } from '../../../interfaces/cour
 import { GetStaticProps, GetStaticPaths, GetStaticPropsContext } from 'next'
 import { Segment, Department } from '../../../interfaces/segment'
 import { CourseDetail } from '../../../interfaces/course'
+import Head from 'next/head'
 
 interface StaticIndexProps {
   course: CourseDetail
 }
 
 const CourseDetailContent = (props: StaticIndexProps) => {
+  const title = 'Titech Info: 逆評定'
+
   return (
-    <div>
-      <SubHeader
-        key={props.course.id}
-        id={props.course.id}
-        name={props.course.courseName}
-        teachers={props.course.teachers}
-      />
-      <Container className="mt-4">
-        <Content
+    <>
+      <Head>
+        <title>{title}</title>
+      </Head>
+      <div>
+        <SubHeader
           key={props.course.id}
           id={props.course.id}
           name={props.course.courseName}
           teachers={props.course.teachers}
         />
-      </Container>
-    </div>
+        <Container className="mt-4">
+          <Content
+            key={props.course.id}
+            id={props.course.id}
+            name={props.course.courseName}
+            teachers={props.course.teachers}
+          />
+        </Container>
+      </div>
+    </>
   )
 }
 

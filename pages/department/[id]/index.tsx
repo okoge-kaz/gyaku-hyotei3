@@ -1,10 +1,10 @@
 import React from 'react'
-import SubHeader from '../../components/Lectures/SubHeader'
+import SubHeader from '../../../components/Lectures/SubHeader'
 import { Container } from 'react-bootstrap'
-import Content from '../../components/Lectures/LecturesListContent'
+import Content from '../../../components/Lectures/LecturesListContent'
 import { GetStaticProps, GetStaticPaths, GetStaticPropsContext } from 'next'
-import { DepartmentCoursesListWithLevel, Course } from '../../interfaces/courselist'
-import { Segment, Department } from '../../interfaces/segment'
+import { DepartmentCoursesListWithLevel, Course } from '../../../interfaces/courselist'
+import { Segment, Department } from '../../../interfaces/segment'
 import Head from 'next/head'
 
 interface StaticIndexProps {
@@ -50,7 +50,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   segments.map(segment => segment.departments.map(department => departmentpaths.push(department)))
 
   return {
-    paths: departmentpaths.map(departmentpath => `/${departmentpath.id}`),
+    paths: departmentpaths.map(departmentpath => `/department/${departmentpath.id}`),
     fallback: false,
   }
 }
