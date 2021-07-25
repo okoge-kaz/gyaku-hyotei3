@@ -14,7 +14,6 @@ const LecturesListContent = (props: StaticIndexProps) => {
   return (
     <Container className={styles.ContainerPadding}>
       <div className={styles.main}>
-
         <div className={styles.title}>基本情報</div>
 
         <div>
@@ -28,12 +27,7 @@ const LecturesListContent = (props: StaticIndexProps) => {
           </p>
           <p>
             <div className={styles.subtitle}>総合評価</div>
-            <Image
-            src='/image/evaluation.png'
-            width='329'
-            height='400'
-            alt="evaluation"
-          />
+            <Image src="/image/evaluation.png" width="329" height="400" alt="evaluation" />
           </p>
         </div>
 
@@ -41,21 +35,21 @@ const LecturesListContent = (props: StaticIndexProps) => {
 
         <div>
           <div className={styles.content}>
-            <span className={styles.subtitle}>良い点</span>
+            <div className={styles.subtitle}>良い点</div>
             <li>てきすとてきすとてきすとてきすとてきすと</li>
             <li>てきすとてきすとてきすとてきすとてきすと</li>
             <li>てきすとてきすとてきすとてきすとてきすと</li>
           </div>
 
           <div className={styles.content}>
-            <span className={styles.subtitle}>悪い点</span>
+            <div className={styles.subtitle}>悪い点</div>
             <li>てきすとてきすとてきすとてきすとてきすと</li>
             <li>てきすとてきすとてきすとてきすとてきすと</li>
             <li>てきすとてきすとてきすとてきすとてきすと</li>
           </div>
 
           <div className={styles.content}>
-            <span className={styles.subtitle}>その他</span>
+            <div className={styles.subtitle}>その他</div>
             <li>てきすとてきすとてきすとてきすとてきすと</li>
             <li>てきすとてきすとてきすとてきすとてきすと</li>
             <li>てきすとてきすとてきすとてきすとてきすと</li>
@@ -66,30 +60,25 @@ const LecturesListContent = (props: StaticIndexProps) => {
 
         <div className={styles.content}>
           <div className={styles.subtitle}>わかりやすさ</div>
-          <Image
-            src='/image/evaluation.png'
-            width='329'
-            height='400'
-            alt="evaluation"
-          />
+          <Image src="/image/evaluation.png" width="329" height="400" alt="evaluation" />
         </div>
 
         <div className={styles.content}>
-          <span className={styles.subtitle}>評価項目</span>
+          <div className={styles.subtitle}>評価項目</div>
           <li>小テスト</li>
           <li>期末試験</li>
           <li>中間レポート</li>
         </div>
 
         <div className={styles.content}>
-          <span className={styles.subtitle}>レポートの内容</span>
+          <div className={styles.subtitle}>レポートの内容</div>
           <li>てきすとてきすとてきすと</li>
           <li>てきすとてきすとてきすと</li>
           <li>てきすとてきすとてきすと</li>
         </div>
 
         <div className={styles.content}>
-          <span className={styles.subtitle}>試験の詳細</span>
+          <div className={styles.subtitle}>試験の詳細</div>
           <li>ちょーむずかしかった</li>
           <li>授業聞くよりも教科書読め</li>
           <li>難易度は高め</li>
@@ -97,12 +86,7 @@ const LecturesListContent = (props: StaticIndexProps) => {
 
         <div className={styles.content}>
           <div className={styles.subtitle}>点数</div>
-          <Image
-            src='/image/evaluation.png'
-            width='329'
-            height='400'
-            alt="evaluation"
-          />
+          <Image src="/image/evaluation.png" width="329" height="400" alt="evaluation" />
         </div>
       </div>
     </Container>
