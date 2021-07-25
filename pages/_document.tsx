@@ -5,6 +5,7 @@ class MyDocument extends Document {
   render(): ReactElement {
     return (
       <Html lang="ja">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lobster" />
         <Head />
         <body>
           <Main />
