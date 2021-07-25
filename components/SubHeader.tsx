@@ -5,7 +5,7 @@ import { Jumbotron, Container } from 'react-bootstrap'
 const SubHeader: FC = () => (
   <Container className={styles.ContainerPadding}>
     <Jumbotron className={styles.JumbotronSize}>
-      <h1>Gyaku - Hyotei</h1>
+      <h1>逆評定</h1>
       <p>
         説明のてきすと説明のてきすと説明のてきすと説明のてきすと説明のてきすと説明のてきすと説明のてきすと
       </p>
